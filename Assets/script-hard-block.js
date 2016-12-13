@@ -10,7 +10,7 @@ script = obj.GetComponent(script_scene);
 
 
 function Start(){
-	hp = 8;
+	hp = 3;
 	Debug.Log("hp: "+ hp);
 }
  
