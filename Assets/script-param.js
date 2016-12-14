@@ -33,6 +33,11 @@ function DoMyWindow (windowID : int) {
     	Application.LoadLevel("GameOver");
 	}
 
+	if (Input.GetKey(KeyCode.Escape)) {
+		Application.LoadLevel("GameOver");
+	}
+
+
 	// Make a very long rect that is 20 pixels tall. 
 	// This will make the window be resizable by the top
 	// title bar - no matter how wide it gets.

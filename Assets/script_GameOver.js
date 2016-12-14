@@ -8,5 +8,9 @@ function OnGUI () {
     if(GUI.Button (Rect (10,200,100,20), "Start Again")){
     	Application.LoadLevel("main");
 	}
+
+	if (Input.GetKey(KeyCode.Escape)) {
+		Application.LoadLevel("main");
+	}
 }
 
