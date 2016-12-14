@@ -10,7 +10,8 @@ function OnGUI () {
 	}
 
 	if (Input.GetKey(KeyCode.Escape)) {
-		Application.LoadLevel("main");
+		Application.Quit();
+		Debug.Log("Quit Game");
 	}
 }
 
