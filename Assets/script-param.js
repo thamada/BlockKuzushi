@@ -16,8 +16,10 @@ function OnGUI() {
     GUI.Label(Rect(10, 160, 200, 40), "" + script.life, style);
 */
 
+//	GUI.Label(Rect(250, 0, 100, 20), "Platform: " + Application.platform, style);
 
     windowRect = GUI.Window (0, windowRect, DoMyWindow, "Status");
+
 //    Debug.Log("windowRect: "+ windowRect);
 }
 
@@ -29,6 +31,7 @@ function DoMyWindow (windowID : int) {
     GUI.Label(Rect(10, 160, 200, 40), "" + script.life, style);
 
 
+
 	if(GUI.Button (Rect (10,200,100,20), "Quit")){
     	Application.LoadLevel("GameOver");
 	}
@@ -37,6 +40,7 @@ function DoMyWindow (windowID : int) {
 		Application.LoadLevel("GameOver");
 	}
 
+	
 
 	// Make a very long rect that is 20 pixels tall. 
 	// This will make the window be resizable by the top
