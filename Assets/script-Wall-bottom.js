@@ -15,7 +15,7 @@ function OnCollisionEnter (collision : Collision) {
 		Instantiate(ball);
 	 	script.life--;
  	} else if (script.life == 0){
-        Application.LoadLevel("GameOver");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
 
 }

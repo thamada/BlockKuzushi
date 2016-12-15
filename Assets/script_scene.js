@@ -1,6 +1,4 @@
 ﻿#pragma strict
-
-#pragma strict
  
 var life :int = 3;
 var score :int = 0;
@@ -15,7 +13,7 @@ function Update () {
 
 	if (is_clear == false){
 	    if (score > 100){
-    	    Application.LoadLevel("GameClear");
+			UnityEngine.SceneManagement.SceneManager.LoadScene("GameClear");
     	    is_clear = true;
 	    }	
 	}

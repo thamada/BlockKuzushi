@@ -33,11 +33,11 @@ function DoMyWindow (windowID : int) {
 
 
 	if(GUI.Button (Rect (10,200,100,20), "Quit")){
-    	Application.LoadLevel("GameOver");
+    	UnityEngine.SceneManagement.SceneManager.LoadScene("GameClear");
 	}
 
 	if (Input.GetKey(KeyCode.Escape)) {
-		Application.LoadLevel("GameOver");
+		UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
 	}
 
 	

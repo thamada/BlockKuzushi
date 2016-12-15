@@ -2,10 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script_scene.js">
     <Files>
-      <File FileName="Assets/script-param.js" Line="28" Column="35" />
-      <File FileName="Assets/script_GameOver.js" Line="14" Column="26" />
-      <File FileName="Assets/script_scene.js" Line="24" Column="1" />
-      <File FileName="Assets/script_GameClear.js" Line="16" Column="1" />
+      <File FileName="Assets/script_scene.js" Line="13" Column="1" />
+      <File FileName="Assets/script_GameClear.js" Line="27" Column="62" />
+      <File FileName="Assets/script-param.js" Line="29" Column="38" />
+      <File FileName="Assets/script_GameOver.js" Line="9" Column="64" />
+      <File FileName="Assets/script_window_platform.js" Line="16" Column="22" />
+      <File FileName="Assets/script-Wall-bottom.js" Line="17" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
