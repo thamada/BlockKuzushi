@@ -5,29 +5,22 @@ var obj :GameObject;
 var script :script_scene;
 var windowRect : Rect = Rect (0, 0, 150, 250);
 
-function OnGUI() {
+function Start(){
     obj = GameObject.Find("script-scene");
     script = obj.GetComponent(script_scene);
+    style.fontSize = 24;
+}
 
-/*
-    GUI.Label(Rect(10, 10, 200, 40), "点数", style);
-    GUI.Label(Rect(10, 50, 200, 40), "" + script.score, style);
-    GUI.Label(Rect(10, 120, 200, 40), "残機数", style);
-    GUI.Label(Rect(10, 160, 200, 40), "" + script.life, style);
-*/
-
-//	GUI.Label(Rect(250, 0, 100, 20), "Platform: " + Application.platform, style);
-
+// OnGUI() is called in every frame like Update()
+function OnGUI() {
     windowRect = GUI.Window (0, windowRect, DoMyWindow, "Status");
-
-//    Debug.Log("windowRect: "+ windowRect);
 }
 
 function DoMyWindow (windowID : int) {
 
-    GUI.Label(Rect(10, 10, 200, 40),  "Score: "+ script.score, style);
-    GUI.Label(Rect(10, 50, 200, 40),  "Life: " + script.life, style);
-    GUI.Label(Rect(10, 90, 200, 40),  "Block: " + script.blockCt, style);
+    GUI.Label(Rect(10, 20, 200, 40),  "Score: "+ script.score, style);
+    GUI.Label(Rect(10, 60, 200, 40),  "Life: " + script.life, style);
+    GUI.Label(Rect(10, 100, 200, 40),  "Block: " + script.blockCt, style);
 
 
 	if(GUI.Button (Rect (10,200,100,20), "Quit")){
