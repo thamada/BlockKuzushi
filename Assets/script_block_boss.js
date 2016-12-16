@@ -8,7 +8,11 @@ var script :script_scene;
 function Start(){
   obj = GameObject.Find("script-scene");
   script = obj.GetComponent(script_scene);
+<<<<<<< HEAD
 	hp = 8;
+=======
+	hp = 1;
+>>>>>>> b20427cb5ab8918d5a80a147313ab18451250312
 }
 
 function OnCollisionEnter() {
