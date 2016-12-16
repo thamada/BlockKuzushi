@@ -1,4 +1,5 @@
 ﻿#pragma strict
+using System.IO;
 
 var life :int = 3;
 var score :int = 0;
@@ -15,4 +16,15 @@ function Update () {
     UnityEngine.SceneManagement.SceneManager.LoadScene("GameClear");
     blockCt -= 1;
   }
+
+  var t = ""+UnityEngine.Time.time;
+  textSave(t+"¥t"+blockCt);
+}
+
+
+public void textSave(string txt){
+	StreamWriter sw = new StreamWriter("./Temp/log.txt",false); //true=append false=create_new
+	sw.WriteLine(txt);
+	sw.Flush();
+	sw.Close();
 }
