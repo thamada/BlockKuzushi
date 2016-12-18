@@ -1,5 +1,5 @@
 ﻿#pragma strict
-using System.IO;
+import System.IO;
 
 var life :int = 3;
 var score :int = 0;
@@ -17,14 +17,17 @@ function Update () {
     blockCt -= 1;
   }
 
-  var t = ""+UnityEngine.Time.time;
-  textSave(t+"¥t"+blockCt);
+  textSave();
 }
 
 
-public void textSave(string txt){
-	StreamWriter sw = new StreamWriter("./Temp/log.txt",false); //true=append false=create_new
-	sw.WriteLine(txt);
-	sw.Flush();
-	sw.Close();
+
+function textSave () {
+    var sw:StreamWriter;
+    var t = ""+UnityEngine.Time.time;
+    
+
+    sw = new StreamWriter("./log.txt", true);
+    sw.WriteLine(t+", blockCt: "+blockCt);
+    sw.Close();
 }
